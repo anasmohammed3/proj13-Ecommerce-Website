@@ -1,38 +1,1024 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* ---------------- start of navbar component ------------------ */
+
+.navbar1 {
+background-color: transparent; 
+position: fixed;
+width: 100%;
+transition: 0.3s;
+z-index: 22222;
+background-color: white;
+box-shadow: -1px 5px 10px 1px #000000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar1 .lap {
+font-size: 40px;
+color: black;
+text-transform: uppercase;
+font-weight: 700;
+margin-top: -6px !important;
+margin-left: 5px !important;
+letter-spacing: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar1 .lap span{
+color: #bb2649;
+}
+
+Nav .link{
+color: black ;
+letter-spacing: 1px;
+margin-left: 50px;
+font-size: 18px;
+opacity: 0.7;
+margin-top: -5px;
+}
+
+.right .i{
+background-color: rgb(210, 208, 208);
+color: black;
+font-size: 20px;
+padding: 10px 11px;
+margin-right: 6px;
+transition: ease-out 0.5s;
+box-shadow: inset 0 0 0 0 #bb2649;
+}
+
+.right .i:hover{
+color: white;
+box-shadow: inset 0 -100px 0 0 #bb2649;
+cursor: pointer;
+} 
+
+nav.navbar .navbar-toggler:active,
+nav.navbar .navbar-toggler:focus {
+outline: none;
+box-shadow: none;
+}
+
+nav.navbar .navbar-toggler-icon {
+width: 24px;
+height: 17px;
+background-image: none;
+position: relative;
+border-bottom: 2px solid black;
+transition: all 300ms linear;
+top: -2px;
+}
+
+nav.navbar .navbar-toggler-icon:focus {
+border-bottom: 2px solid black;
+}
+
+nav.navbar .navbar-toggler-icon:after,
+nav.navbar .navbar-toggler-icon:before {
+width: 24px;
+position: absolute;
+height: 2px;
+background-color: black;
+top: 0;
+left: 0;
+content: '';
+z-index: 2;
+transition: all 300ms linear;
+}
+
+nav.navbar .navbar-toggler-icon:after {
+top: 8px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+transform: rotate(45deg);
+background-color: black;
+height: 2px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+transform: translateY(8px) rotate(-45deg);
+background-color: black;
+height: 2px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+border-color: transparent;
+}
+
+.right{
   display: flex;
-  flex-direction: column;
+}
+
+.navSign{
+  display: flex;
+}
+
+.navSign .navSign-up p{
+ position: absolute;
+ top: 65px;
+ font-weight: 600;
+ background-color: #2f2e31;
+ color: white;
+ padding: 0 5px;
+ visibility: hidden;
+}
+
+.navSign .navSign-up:hover p,.navSign .navSign-in:hover p,.theUser:hover p{
+  visibility: visible;
+}
+
+.navSign .navSign-in p{
+  position: absolute;
+  top: 65px;
+  font-weight: 600;
+  background-color: #2f2e31;
+  color: white;
+  padding: 0 5px;
+  visibility: hidden;
+}
+
+.user{
+  display: none;
+}
+
+.theUser p{
+  position: absolute;
+  top: 65px;
+  font-weight: 600;
+  background-color: #2f2e31;
+  color: white;
+  padding: 0 5px;
+  visibility: hidden;
+}
+
+.right{
+  margin-top: 20px;
+}
+
+.heart{
+  margin-left: -30px;
+}
+
+ul{
+  list-style: none;
+  
+}
+
+ul#user_info li{
+  position: relative;
+}
+ 
+ul#user_info li .badge {
+  position: absolute;
+  width: 25px;
+  height: 20px;
+  color: black;
+  top:-14px;
+  right:2px;
+  font-size: 18px;
+}
+
+.carts_products {
+  position: absolute;
+  width:470px;
+  height: 100px;
+  transform: translate(-130px,0);
+  background-color: #eaeaea;
+  top: 62px;
+  left: -214px;
+  padding: 10px;
+  border: 1px solid #bb2649;
+  /* display: none; */
+  overflow: auto;
+  z-index: 22;
+}
+
+.cart-item{
+  display: flex;
+  justify-content: space-between;
+  margin-left: -14px;
+}
+
+.cart-item-desc,.cart-item-quan{
+  display: flex;
+}
+
+.cart-item-desc p{
+  padding: 0 10px;
+  text-transform: capitalize;
+}
+
+.cart-item-quan button{
+  margin: 0 10px 5px 10px;
+  border: none;
+  font-weight: 700;
+  background-color: rgb(210, 208, 208);
+  padding: 1px 8px 3px 9px;
+  color: #bb2649;
+}
+
+.carts_products a {
+ display: block;
+ margin: 4px 0;
+ padding: 5px 10px;
+ background-color: #bb2649;
+ color: #fff;
+ text-align: center;
+ text-decoration: none;
+ font-weight: 600;
+ transition: 0.3s;
+}
+
+.carts_products a:hover{
+  text-decoration: none;
+  color: white;
+  background-color: #a62d85;
+  transition: 0.3s;
+}
+
+
+
+
+
+
+/* ---------------- end of navbar component ------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------- start of home component ------------------ */
+
+
+
+.theHome{
+  padding-top: 140px;
+  position: relative;
+}
+
+.welcome{
+  font-size: 16px;
+  font-weight: 700; 
+  letter-spacing: 3px;
+  margin-left: 5px;
+  color: black;
+}
+
+.theHome h4{
+  background-color: #bb2649;
+  width: 8px;
+  height: 316px;
+  margin-left: -30px;
+  margin-top: 15px;
+}
+
+.theHome h1{
+  font-size: 43px;
+  letter-spacing: 1px;
+  color: black;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: -339px;
+  width: 80%;
+}
+
+.theHome h1 .finding{
+  color: #bb2649;
+}
+
+.theHome p{
+  color: rgb(139, 136, 136);
+  letter-spacing: 1px;
+  font-size: 17px;
+  margin-top: 14px;
+  width: 80%;
+}
+
+.theHome button{
+  color: black;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+}
+
+.theHome button a{
+  color: black;
+  text-decoration: none;
+}
+
+.theHomeIcon{
+  border: 1px solid black ;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 4px 8px;
+  font-size: 15px;
+}
+
+.back{
+  background-color: #bb2649;
+  width: 113%;
+  border-radius: 20px 0 0 20px;
+}
+
+.theHomeImg{
+  width: 500px;
+  margin-left: -150px;
+}
+
+.socialLink{
+ margin: 5% 1%;
+}
+
+.socialLink .icon{
+  background-color: #2f2e31;
+  color: white;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0 52px;
+  transition: ease-out 0.5s;
+  box-shadow: inset 0 0 0 0 #bb2649;
+}
+
+.socialLink .icon:hover{
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #bb2649;
+  cursor: pointer;
+} 
+
+
+
+/* ---------------- end of home component ------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------- start of products , productImages and latestPro components  ------------------ */
+
+
+.theProducts .features{
+padding-left: 100px;
+padding-top: 10px;
+border-top: 1px solid silver;
+border-bottom: 1px solid silver;
+width: 99%;
+margin-top: 50px;
+background-color: #F3F9FC;
+}
+
+.theProducts .features .feature-item .featuresIcon{
+font-size: 20px;
+color: #bb2649;
+}
+
+.theProducts .features .feature-item span{
+padding: 0 10px;
+font-size: 20px;
+font-weight: 600;
+text-transform: capitalize;
+}
+
+.cardProduct h2{
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.cardProduct p{
+  background-color: #bb2649;
+  width: 100px;
+  height: 4px;
+  margin: auto;
+}
+
+.pro{
+  height:100%;
+  padding: 80px 0;
+}
+
+.proImg {
+  background-color: rgba(228, 227, 227, 0.62);
+  height: 100%; 
+  display: flex; 
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  border-radius: 0 20px 0 20px;
+}
+
+.proImg img {
+  width: 80%;
+}  
+
+.proText h4{
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+
+.proText span{
+  color: rgb(146, 143, 143);
+}
+
+.add{
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
+ 
+}
+
+.add button{
+   border: none;
+   background-color: #bb2649;
+   color: white;
+   border-radius: 10px;
+   text-transform: capitalize;
+   font-weight: 600;
+   font-size: 20px;
+   padding: 7px 20px;
+   margin-right: 10px;
+    transition: ease-out 0.5s;
+    box-shadow: inset 0 0 0 0 #865abf;
+     cursor: pointer;
+      z-index: 20;
+}
+
+.add .heart{
+background-color: #B8B8B8;
+padding: 10px;
+border-radius: 50%;
+cursor: pointer;
+z-index: 20;
+font-size: 20px;
+}
+
+.productImg{
+  width: 100%;
+  margin-top: 10%;
+}
+
+.all{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin: 100px 0;
+}
+
+.all .theAll{
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #bb2649;
+  padding: 10px 20px;
+  text-transform: capitalize;
+}
+
+
+
+/* ---------------- end of products , productImages and latestPro components  ------------------ */
+
+
+
+
+
+.cardProduct1{
+  margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------- start of sign up and sign in component ------------------ */
+
+
+
+.home-signUP{
+  background-color:#F3F9FC ;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-signUP .sign-up{
+  background-color: white;
+  padding: 50px;
+  margin-top: 60px;
+}
+
+.home-signUP .sign-up h2{
+  margin-top: -30px;
+  margin-left: 3px;
+}
+
+.home-signUP .sign-up .signUP-inputs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ margin-top: 10px;
+}
+
+.home-signUP .sign-up .signUP-inputs input{
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  padding-left: 10px;
+  outline: none;
+  border: 1px solid silver;
+}
+
+.home-signUP .sign-up .signUP-inputs .submit{
+  background-color: #bb2649;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 200px;
+
+}
+
+
+
+
+
+
+
+/* --------------- end of sign up and sign in component ------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------- start of me component ------------------ */
+
+
+.theProfile{
+  background-color:#F3F9FC ;
+  height: 100vh;
+}
+
+.theProfile .profile-user{
+  padding: 115px 0 15px 20px;
+  background-color: white;
+  text-transform: capitalize;
+}
+
+.theProfile .profile-address{
+  margin-top: 30px;
+  
+}
+
+.theProfile .profile-address h3{
+  background-color: white;
+  padding: 10px 0 20px 20px;
+  text-transform: capitalize;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+.theProfile .profile-address p{
+  background-color: silver;
+  height: 1px;
+  margin-top: -15px;
+}
+
+.theProfile .profile-button,.theProfile .profile-out{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.theProfile .profile-out button{
+  background-color: #F3F9FC;
+  color: #bb2649;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform:uppercase;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0 10px 6px;
+  border: none;
+}
+
+.theProfile .profile-button .goBack{
+  background-color: #bb2649;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 20px;
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+
+
+
+/* --------------- end of me component ------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------- start of shopping cart component ------------------ */
+
+
+
+.theCart{
+  padding-top: 120px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.shopping-cart{
+ padding-top: 110px;
+}
+
+.theWords{
+  font-size: 22px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.control{
+  border: none;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: rgb(210, 208, 208);
+  padding: 1px 8px 3px 9px;
+  color: #bb2649;
+}
+
+
+
+
+
+/* --------------- end of shopping cart component ------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------- start of fovarite component ------------------ */
+
+
+
+.fovarits{
+  padding-top: 160px;
+}
+
+.fovarits h2{
+  text-align: center;
+  font-weight: 700;
+}
+
+.favorite-products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.favorite-product {
+  width: 355px;
+  height: 280px;
+  background-color: rgba(238, 232, 232, 0.49);
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.favorite-product img {
+  padding-top: 30px;
+  width: 80%;
+  display: block;
+   margin: auto;
+}  
+
+.fovarite-proText{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.fovarite-proText h4{
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 5px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.fovarite-proText .fov{
+  margin-right: 20px;
+  font-size: 25px;
+  color: red;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/* --------------- end of shopping cart component ------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------- start of contact component ------------------ */
+
+
+
+
+.contact{
+  background: black;
+  padding: 60px 0 10px 0;
+}
+
+.contact h2{
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.contact input,.contact textarea{
+  width: 100%;
+  background: rgba(192, 192, 192, 0.233);
+  border: 1px solid silver;
+  margin-bottom: 10px;
+  border-radius: 21px;
+  color: white;
+  padding: 20px 26px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.contact input:focus, .contact textarea:focus {
+  background: white;
+  color: black;
+}
+
+.contact input::placeholder, .contact textarea::placeholder {
+  font-size: 17px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contact input:focus::placeholder, .contact textarea:focus::placeholder {
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contact button {
+  font-weight: 700;
+  color: black;
+  font-size: 20px;
+  background-color: white;
+  padding: 13px 50px;
+  margin-top: 20px;
+  border: none;
+  transition: 1s;
+  box-shadow: inset 0 0 0 0 white; 
+}
+
+.contact button:hover {
+  color: white;
+  box-shadow: inset 150px 0 0 0 black;
+}
+
+.contact img{
+  width: 100%;
+  
+}
+
+
+
+
+
+/* ---------------- end of contact component ------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------- start of footer component ------------------ */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 30px 40px;
+}
+
+.footer h2 {
+  font-size: 40px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.footer h2 span {
+  color: #bb2649;
+}
+
+.footer h4 {
+  color: rgba(192, 192, 192, 0.767);
+  font-size: 15px;
+}
+
+
+/* ---------------- end of footer component ------------------ */
+
+
+@media (max-width:1000px) {
+
+  .navSign-up p,.navSign-in p,.theUser p{
+    margin-top: 180px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+
+
+@media (max-width:800px) {
+
+  .carts_products{
+    margin-left: 270px;
+    width: 450px;
   }
+
+  
+  .back .theHomeImg{
+    margin-left: -120px;
+    
+  }
+}
+
+
+
+@media (max-width:700px) {
+
+  .back{
+    width: 100%;
+    margin-top: 70px;
+  }
+
+  .back .theHomeImg{
+    margin-left: 0px;
+    margin-top: -160px;
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+
+@media (max-width:600px) {
+  
+
+    .back{
+      width: 100%;
+      margin-top: 70px;
+    }
+
+    .back .theHomeImg{
+      margin-left: 0px;
+      margin-top: -140px;
+      width: 100%;
+    }
+
+    .sign-up .signUP-inputs{
+      width:391px ;
+    }
+
+    .footer h2{
+      margin-left: -20px;
+    }
+
+    .footer .words{
+      margin-left: 50px;
+    }
+
+    .theWords{
+      font-size: 14px;
+    }
 }
